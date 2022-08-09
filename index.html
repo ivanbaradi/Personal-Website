@@ -13,8 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <!-- Note: change it whenever you added or removed a google font-->
-        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Lato:ital@1&family=Roboto+Slab&display=swap" rel="stylesheet">     
-
+        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Lato:ital,wght@1,400;1,700&family=Roboto+Slab&display=swap" rel="stylesheet">
         <!-- CSS Stylesheets-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
@@ -33,8 +32,8 @@
     <body>
 
         <!-- Nagivation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-white">
-            <a class="navbar-brand">Ivan Baradi</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">Ivan Baradi</a>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/ivanbaradi/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
                 <a href="https://github.com/ivanbaradi"><i class="fa-brands fa-square-github fa-2xl"></i></a>
@@ -45,29 +44,47 @@
             </button>
             <div class='collapse navbar-collapse' id='navbarSupportedContent'>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link text-dark" href="">Home</a></li>
-                    <li class="nav-item biography"><a class="nav-link text-dark" href="">Biography</a></li>
-                    <li class="nav-item portfolio"><a class="nav-link text-dark" href="">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#scrollspyHeading1">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#scrollspyHeading2">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#scrollspyHeading3">Contacts</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- Advertisement -->
-        <div class="row advertisement">
-                <div class="col-lg-6 profile-image">
-                    <img src="./images/profile-image.png" alt="profile image">
+        <section class="advertisement">
+                <img class="landscape-image" src="./images/landscape.jpg" alt="landscape">
+                <div class="row">
+                    <div class="col-lg-6 profile-desc">
+                        <div style="font-size: 60px; margin-bottom: 10px;">Hey, I'm Ivan!</div>
+                        <div>I am a software developer who enjoys designing web applications to service customers. Check out the work that I designed so far.</div>
+                        <button class="btn btn-lg btn-outline-dark browse-projects-btn" style="margin-top: 20px;">BROWSE MY PROJECTS</button>
+                    </div>
+                    <div class="col-lg-6 profile-image"><img src="./images/profile-image.png" alt="profile image"></div>
                 </div>
-                <div class="col-lg-6 profile-desc">
-                    <div style="font-size: 60px; margin-bottom: 10px;">Hey, I'm Ivan!</div>
-                    <div>I am a software developer who enjoys designing web applications to service customers. Check out the work that I designed so far.</div>
-                    <button class="btn btn-lg btn-outline-dark learn-abt-me-btn" style="margin-top: 20px;">BROWSE MY PROJECTS</button>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="about" id="scrollspyHeading1">
+            <h1 style="padding-top: 20px;">About Me</h1>
+            <div class="row">
+                <div class="col-lg-4 about-tile">
+                    <h2 class="about-title hobbies">Hobbies</h2>
+                    <div class="about-desc">I enjoy playing video games, hanging out with friends, and exploring outside. I also love to get a cup of coffee to fill my energy for the day. &#9749</div>
                 </div>
-        </div>
-
-        <div class="biography">
-
-        </div>
+                <div class="col-lg-4 about-tile">
+                    <h2 class="about-title skills">Skills</h2>
+                    <div class="about-desc">
+                        <div>I am proficient with C++ and Java.</div>
+                        <div style="margin: 10px 0;">I use HTML, CSS, Bootstrap, and JavaScript to design web applications. NodeJS, ExpressJS, and EJS are web utilities I use to design backend services.</div>
+                        <div><span style="font-weight: 700;">Other skills include the following</span>: Python, Lua, MySQL, ReactJS, MySQL, and MongoDB.</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 about-tile">
+                    <h2 class="about-title accomplishments">Accomplishments</h2>
+                </div>
+            </div>
+        </section>
 
     </body>
 
@@ -75,6 +92,6 @@
 
     <!-- Footer -->
     <footer>
-        <div class="copyright">Copyright &copy; 2022</div>
+        <div class="copyright">Copyright &copy; 2022. All Rights Reserved.</div>
     </footer>
 </html>
