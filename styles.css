@@ -15,25 +15,12 @@ body {
     font-size: 25px;
 }
 
+.navbar-brand:hover{
+    cursor: default;
+}
+
 .nav-item {
     margin-right: 20px;
-}
-
-.social-media {
-    position: absolute;
-    margin-left: 150px;
-}
-
-.fa-brands {
-    color: darkgray;
-}
-
-.fa-brands:hover {
-    color:black;
-}
-
-.fa-linkedin {
-    margin-right: 15px;
 }
 
 /** ADVERTISEMENT **/
@@ -89,6 +76,7 @@ body {
 
 .about {
     background-color: #E9DAC1;
+    padding-bottom: 50px;
     position: relative;
 }
 
@@ -104,6 +92,10 @@ body {
     text-align: left;
 }
 
+.about-discussion.p2, .about-discussion.p3, .about-discussion.p4{
+    margin-top: 50px;
+}
+
 
 /** FOOTER **/
 
@@ -112,15 +104,34 @@ footer {
     width: 100%;
 }
 
+.social-media {
+    margin: 15px auto;
+}
+
+/* LinkedIn */
+
+.fa-linkedin {
+    color: #0072b1;
+    margin-right: 15px;
+}
+
+.fa-linkedin:hover{
+    color: #004971;
+}
+
+/* GitHub */
+.fa-square-github{
+    color: #171515e3;
+}
+
+
+.fa-square-github:hover{
+    color: black;
+}
+
 /** MEDIA QUERIES **/
 
 @media (max-width: 991px) {
-
-    /* Navigator */
-
-    .social-media .fa-brands{
-        display: none;
-    }
 
     /* Advertisement */
 
