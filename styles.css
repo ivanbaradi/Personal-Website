@@ -1,4 +1,10 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
+    background-color: #fff;
     font-family: 'Roboto Slab', serif;
     text-align: center;
 }
@@ -33,7 +39,8 @@ body {
 /** ADVERTISEMENT **/
 
 .advertisement {
-    background-color: rgb(207,210,207,0.7); /* may need to change later */
+    background-color: rgba(0, 0, 0, 0.6); /* may need to change later */
+    color:#fff;
     font-family: 'Lato', sans-serif;
     position: relative;
 }
@@ -55,10 +62,17 @@ body {
     height: 500px;
 }
 
-/* Profiled Image */
+/* Profile Image */
 .profile-image img{
-    height: 35rem;
-    width: 40rem;
+    height: 42rem;
+    width: 42rem;
+}
+
+.profile-intro{
+    font-size: 80px; 
+    margin-bottom: 10px; 
+    font-family: 'Roboto Slab', serif; 
+    font-weight: 800;
 }
 
 .profile-desc {
@@ -74,35 +88,26 @@ body {
 /** ABOUT **/
 
 .about {
-    background-color: #fff;
+    background-color: #E9DAC1;
+    position: relative;
 }
 
-.about .row{
-    margin-top: 40px;
-}
-
-.about-tile {
-    font-family: 'Lato', sans-serif;
-    padding: 20px 40px 0;
-    border: 4px dashed black;
-    border-radius: 15%;
-}
-
-.about-title {
-    margin-bottom: 20px;
+.about-heading{
     font-weight: 700;
+    font-size: 50px;
+    padding: 90px 0 30px;
 }
 
-.about-desc {
-
-    font-size: 20px;
+.about-discussion{
+    margin: auto 250px;
+    font-size: 22px;
     text-align: left;
 }
+
 
 /** FOOTER **/
 
 footer {
-    background-color: #fff;
     padding: 10px 0;
     width: 100%;
 }
@@ -111,11 +116,20 @@ footer {
 
 @media (max-width: 991px) {
 
+    /* Navigator */
+
+    .social-media .fa-brands{
+        display: none;
+    }
+
+    /* Advertisement */
+
     .advertisement .row{
         top: 100px
     }
 
     .profile-desc {
+        padding-left: 0px;
         text-align: center;
     }
 
@@ -123,9 +137,10 @@ footer {
         display: none;
     }
 
-    .social-media .fa-brands{
-        display: none;
-    }
+    /* About */
+
+
+    /* Bootstrap CSS */
 
     .nav-item {
         margin-right: 0;
