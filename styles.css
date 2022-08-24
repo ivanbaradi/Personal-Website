@@ -9,6 +9,20 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+    padding: 30px 0;
+}
+
+textarea{
+    margin-top: 30px;
+}
+
+input, textarea{
+    font-weight: 200;
+}
+
 /** NAVIGATION BAR **/
 
 .navbar-brand{
@@ -80,14 +94,10 @@ body {
     position: relative;
 }
 
-.about-heading{
-    font-weight: 700;
-    font-size: 50px;
-    padding: 90px 0 30px;
-}
-
 .about-discussion{
-    margin: auto 250px;
+    margin: 0 250px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
     font-size: 22px;
     text-align: left;
 }
@@ -96,6 +106,55 @@ body {
     margin-top: 50px;
 }
 
+/** PORTFOLIO **/
+
+.portfolio{
+    background-color: #EAFFD0;
+}
+
+.project{
+    color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.project-img{
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 80%;
+}
+
+/* .project-img:hover{
+    filter: contrast(0.2)
+} */
+
+.project-desc{
+    position: absolute;
+}
+
+/** CONTACT **/
+
+.contacts{
+    background-color: #CADEFC;
+}
+
+.contacts-form{
+    padding: 10px 0 30px;
+}
+
+.contacts-instructions, .contacts-form{
+    font-family: 'Noto Sans', sans-serif; 
+    font-weight: 200; 
+    font-size: 18px;
+}
+
+.last-name{
+    margin: 0 40px;
+}
+
+.first-name, .last-name, .email-address{
+    display: inline;
+}
 
 /** FOOTER **/
 
@@ -133,7 +192,7 @@ footer {
 
 @media (max-width: 991px) {
 
-    /* Advertisement */
+    /* ADVERTISEMENT */
 
     .advertisement .row{
         top: 100px
@@ -148,7 +207,7 @@ footer {
         display: none;
     }
 
-    /* About */
+    /* ABOUT */
 
 
     /* Bootstrap CSS */
