@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+    <!-- HEAD -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,13 +27,9 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-        <!-- My Script -->
-        <script src="./script.js"></script>
     </head>
 
-
-
+    <!-- BODY -->
     <body>
 
         <!-- Nagivation Bar -->
@@ -88,56 +85,85 @@
             </p>
         </section>
 
+            <!-- Portfolio -->
+        <section class="portfolio" id="scrollspyHeading2">
+        
+            <h1>Portfolio</h1>
+
+            <!-- Obby Speedrun -->
+            <div class="project">
+                <img class="project-img" src="./images/obby-speedrun-challenge.png" alt="Obby Speedrun Challenge">
+                <p class="project-title">Obby Speedrun Challenge</p>
+                <p>
+                    Roblox obby game where players can beat their personal best times when completing an obby.
+                    Players can teleport to any of the stages to beat their PRs. There are a total of 10 stages in this game.
+                </p>
+                <p><strong>Tools: </strong> Lua, RobloxStudios</p>
+                <div><a href="https://www.roblox.com/games/2982718723/Obby-Speedrun-Challenge" class="btn btn-lg btn-dark project-btn">GO TO PROJECT</a></div>
+            </div>
+
+            <!-- Ninja Arena -->
+            <div class="project">
+                <img class="project-img" src="./images/ninja-arena-2.png" alt="Ninja Arena 2">
+                <p class="project-title">Ninja Arena 2</p>
+                <p>
+                    Roblox RPG game where opposing teams challenge Ninja Heroes 101 team in a battle. Two teams, 
+                    which are Ninja Heroes 101 and a random opposing team, will face off each 
+                    other to accumulate amount of kills to win the game.
+                </p>
+                <p><strong>Tools: </strong>Lua, RobloxStudios</p>
+                <div><a href="https://www.roblox.com/games/2985893079/BETA-Ninja-Arena-2" class="btn btn-lg btn-dark project-btn">GO TO PROJECT</a></div>
+            </div>
+
+            <!-- Flashcards -->
+            <div class="project">
+                <img class="project-img" src="" alt="Flashcards">
+                <p class="project-title">Flashcards</p>
+                <p>
+                    Java GUI app where users can create flashcards and their sets. You can use this app to
+                    study for exams, have fun, and more. 
+                </p>
+                <p><strong>Tools: </strong> Java, Java Swing, MySQL, MySQL Workbench, Eclipse</p>
+                <div><a href="https://www.roblox.com/games/2985893079/BETA-Ninja-Arena-2" class="btn btn-lg btn-dark project-btn">GO TO PROJECT</a></div>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section class="contacts" id="scrollspyHeading3">
+            <h1 style="margin-bottom: 0px; padding-bottom: 20px;">Contact Form</h1>
+            <p class="contacts-instructions">If you ever want to reach out for me, fill out the information down below and I will get back to you.</p>
+            
+            <!-- Contacts Form -->
+            <div class="contacts-form">
+                <div class="form-group first-name"> <!-- First Name -->
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-group last-name"> <!-- Last Name -->
+                    <input type="text" id="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group email-address"> <!-- Email Address -->
+                    <input type="email" id="emailAddress" placeholder="Email Address" required>
+                </div><br>
+                <div class="form-group message"> <!-- Message -->
+                    <textarea id="message" cols="74" rows="7" placeholder="Your Message" required></textarea>
+                </div>
+                <button class="btn btn-primary submit">Submit</button>
+            </div>
+        </section>
     </body>
 
-    <!-- Portfolio -->
-    <section class="portfolio" id="scrollspyHeading2">
-        
-        <h1>Portfolio</h1>
-        <div class="row">
 
-            <!-- Ninja Arena 2  -->
-            <div class="col-lg-4 col-md-6 project">
-                <a href="https://www.roblox.com/games/2985893079/BETA-Ninja-Arena-2"><img class="project-img" src="./images/ninja-arena-2.png" alt="Ninja Arena 2"></a>
-            </div>
-
-            <!-- Obby Speedrun Challenge  -->
-            <div class="col-lg-4 col-md-6 project">
-                <a href="https://www.roblox.com/games/2982718723/Obby-Speedrun-Challenge"><img class="project-img" src="./images/obby-speedrun-challenege.png" alt="Obby Speedrun Challenge"></a>
-            </div>
-
-        </div>
-
-
-    </section>
-
-    <!-- Contacts -->
-    <section class="contacts" id="scrollspyHeading3">
-        <h1 style="margin-bottom: 0px; padding-bottom: 20px;">Contact Form</h1>
-        <p class="contacts-instructions">If you ever want to reach out for me, fill out the information down below and I will get back to you.</p>
-        <form class="contacts-form" action="">
-            <div class="form-group first-name"> <!-- First Name -->
-                <input type="text" placeholder="First Name" required>
-            </div>
-            <div class="form-group last-name"> <!-- Last Name -->
-                <input type="text" placeholder="Last Name" required>
-            </div>
-            <div class="form-group email-address"> <!-- Email Address -->
-                <input type="email" placeholder="Email Address" required>
-            </div><br>
-            <div class="form-group message"> <!-- Message -->
-                <textarea name="message" id="" cols="74" rows="7" placeholder="Your Message" required></textarea>
-            </div>
-            <button class="btn btn-primary">Submit</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
         <div class="social-media">
             <a href="https://www.linkedin.com/in/ivanbaradi/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
             <a href="https://github.com/ivanbaradi" target="_blank"><i class="fa-brands fa-square-github fa-3x"></i></a>
         </div>
-        <div class="copyright">Copyright &copy; 2022. All Rights Reserved.</div>
+        <div class="copyright"></div>
     </footer>
+
+    <!-- JQUERY SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- MY SCRIPT -->
+    <script src="./script.js"></script>
 </html>
